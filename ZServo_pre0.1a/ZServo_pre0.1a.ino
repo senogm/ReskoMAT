@@ -1,23 +1,23 @@
 #include <avr/sleep.h>
 #include <Servo.h>
 
-#define pot_pin      7    // потенциометр = на nano - A7
 #define button_pin   2    // пин кнопки под прерывание 
 #define xservo_pin   3    // пин X сервы
+#define pot_pin      7    // потенциометр = на nano - A7
 
-#define zstep_en 4    // пин Z шаг
-#define zstep_ms1 5    // пин Z шаг
-#define zstep_ms2 6    // пин Z шаг
-#define zstep_ms3 7    // пин Z шаг
-#define zstep_rst 8    // пин Z шаг
-#define zstep_sleep 9    // пин Z шаг
-#define zstep_steppin 10    // пин Z шаг
-#define zstep_dirpin  11    // пин Z шаг
+#define zstep_en  5         // пин Z шаг
+#define zstep_ms1 6         // пин Z шаг
+#define zstep_ms2 7         // пин Z шаг
+#define zstep_ms3 8         // пин Z шаг
+#define zstep_rst 9         // пин Z шаг
+#define zstep_sleep   10    // пин Z шаг
+#define zstep_steppin 11    // пин Z шаг
+#define zstep_dirpin  12    // пин Z шаг
 
-#define led_pin      13   // пин подключения LED
-#define xmax_angle   160  // максимальный угол поворота Х сервы
-#define xservo_wait  1000
-#define zservo_wait  1000
+#define led_pin      13     // пин подключения LED
+#define xmax_angle   180    // максимальный угол поворота Х сервы
+#define xservo_wait  1000   // задержка Х сервы
+#define zservo_wait  1000   // задержка Z сервы
 // количество шагов на 1 оборот
 #define step_round 200
 // скорость двигателя Z
